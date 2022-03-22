@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ButtonContext } from "../../context/sidebarContext";
+import { BodyCon } from "./style";
 
 const Body = () => {
-    return (
-        <div>Body</div>
-    )
-}
+  const [logo] = useContext(ButtonContext);
 
-export default Body
+  return <BodyCon logo={logo}>Body</BodyCon>;
+};
+
+export default Body;

@@ -1,12 +1,8 @@
-import React from 'react'
-import { SidebarCon } from './style'
+import React from "react";
+import { SidebarCon } from "./style";
 
 const Sidebar = () => {
-  return (
-    <SidebarCon>
-      a
-    </SidebarCon>
-  )
-}
+  return <SidebarCon></SidebarCon>;
+};
 
-export default Sidebar
+export default Sidebar;
