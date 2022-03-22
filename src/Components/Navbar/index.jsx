@@ -23,7 +23,13 @@ const Navbar = () => {
         <NavWrapper>
           <DiplayFlexCon>
             <SidebarLogo onClick={() => setLogo(!logo)} />
-            <YoutubeLogo />
+            <a
+              href="https://www.youtube.com/channel/UCB0Ryoxqhqu_h_FBEY233Xg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YoutubeLogo />
+            </a>
           </DiplayFlexCon>
           <DiplayFlexCon>
             <form autoComplete="on">
@@ -35,7 +41,7 @@ const Navbar = () => {
             <CreateVideoIcon />
             <MenuLogoIcon />
             <NotificaionLogoIcon />
-            <UserAccaunt />
+            <UserAccaunt />:
           </DiplayFlexCon>
         </NavWrapper>
       </NavbarContainer>

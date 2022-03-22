@@ -14,7 +14,7 @@ const Root = () => {
     <div>
       <Navbar />
       <DisplayFlexContent>
-        {logo && <Sidebar />}
+        {logo ? <Sidebar />:<h1>Dabba bolle</h1>}
         <DisplayFlexColumn>
           <FootNav />
           <Body />

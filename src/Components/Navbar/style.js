@@ -29,6 +29,9 @@ const YoutubeLogo = styled.img.attrs({
   src: `${HeaderLogo}`,
 })`
   width: 90px;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const SidebarLogo = styled.img.attrs({
@@ -36,6 +39,11 @@ const SidebarLogo = styled.img.attrs({
 })`
   width: 20px;
   margin-right: 25px;
+  opacity: 0.5;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 `;
 
 const DiplayFlexCon = styled.div`
