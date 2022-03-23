@@ -9,24 +9,12 @@ import WatchLetter from "../assets/Assets/navbar/leftBlockIcons/8.svg";
 
 export const logoData = [
   {
-    title: "Home",
-    icon: WatchLetter,
-  },
-  {
-    title: "Navigator",
-    icon: Navigator,
-  },
-  {
-    title: "Shorts",
-    icon: Library,
-  },
-  {
     title: "Subscribtions",
-    icon: Subscribtions,
+    icon: Shorts,
   },
   {
     title: "Library",
-    icon: Shorts,
+    icon: Home,
   },
   {
     title: "Liked",
@@ -37,7 +25,22 @@ export const logoData = [
     icon: YourVideos,
   },
   {
-    title: "Watch Letter",
-    icon: Home,
+    title: "Shorts",
+    icon: Subscribtions,
   },
 ];
+
+export const logoDataTwo = [
+  {
+    title: "Home",
+    icon: WatchLetter,
+  },
+  {
+    title: "Navigator",
+    icon: Navigator,
+  },
+  {
+    title: "Watch Letter",
+    icon: Library,
+  },
+]

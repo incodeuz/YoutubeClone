@@ -27,7 +27,7 @@ export const data = [
     whenPosted: `2 hours ago`,
     name: "Shang-chi Legend of the ten rings",
     channelName: `Web Code Academy`,
-    type: "movies",
+    type: "movies", 
     url: "https://oyster.ignimgs.com/wordpress/stg.ign.com/2021/04/Shang-Chi-Poster-Marvel.jpg",
   },
   {

@@ -8,6 +8,8 @@ import CreateVideo from "../../assets/Assets/header/headerMore/1.png";
 import MenuLogo from "../../assets/Assets/header/headerMore/2.png";
 import NotificaionLogo from "../../assets/Assets/header/headerMore/3.png";
 import UserIcon from "../../assets/imgs/ava4.png";
+import MicOn from "../../assets/forNavbar/micon.png";
+import MicOff from "../../assets/forNavbar/micoff.png";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -73,23 +75,35 @@ const SearchLogo = styled.img.attrs({
   src: `${SearchIcon}`,
 })`
   width: 52px;
+  :hover{
+    cursor:pointer;
+  }
 `;
 const CreateVideoIcon = styled.img.attrs({
   src: `${CreateVideo}`,
 })`
   width: 30px;
+  :hover{
+    cursor:pointer;
+  }
 `;
 const MenuLogoIcon = styled.img.attrs({
   src: `${MenuLogo}`,
 })`
   width: 30px;
   margin-left: 30px;
+  :hover{
+    cursor:pointer;
+  }
 `;
 const NotificaionLogoIcon = styled.img.attrs({
   src: `${NotificaionLogo}`,
 })`
   width: 25px;
   margin-left: 30px;
+  :hover{
+    cursor:pointer;
+  }
 `;
 const UserAccaunt = styled.img.attrs({
   src: `${UserIcon}`,
@@ -97,6 +111,36 @@ const UserAccaunt = styled.img.attrs({
   width: 35px;
   margin-left: 30px;
   border-radius: 50%;
+  :hover{
+    cursor:pointer;
+  }
+`;
+
+const Microphone = styled.img.attrs({
+  src: `${MicOff}`,
+})`
+  width: 33px;
+  margin-left:10px;
+  border: 1px solid gray;
+  background-color: #313131;
+  padding:5px;
+  border-radius: 50%;
+  :hover{
+    cursor:pointer;
+  }
+`;
+const MicrophoneOn = styled.img.attrs({
+  src: `${MicOn}`,
+})`
+  width: 33px;
+  margin-left:10px;
+  border: 1px solid gray;
+  background-color: #313131;
+  padding:5px;
+  border-radius: 50%;
+  :hover{
+    cursor:pointer;
+  }
 `;
 
 export {
@@ -111,4 +155,7 @@ export {
   YoutubeLogo,
   SidebarLogo,
   UserAccaunt,
+  Microphone,
+  MicrophoneOn,
+
 };

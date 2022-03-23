@@ -12,11 +12,13 @@ import {
   MenuLogoIcon,
   CreateVideoIcon,
   UserAccaunt,
+  Microphone,
+  MicrophoneOn,
 } from "./style";
 
 const Navbar = () => {
-  const [logo, setLogo] = useContext(ButtonContext);
-
+  const [logo, setLogo, mic, setMic] = useContext(ButtonContext);
+  console.log(mic);
   return (
     <>
       <NavbarContainer>
@@ -36,6 +38,11 @@ const Navbar = () => {
               <InputSearchBar placeholder="Enter a request" />
             </form>
             <SearchLogo />
+            {mic ? (
+              <Microphone onClick={() => setMic(!mic)} />
+            ) : (
+              <MicrophoneOn onClick={() => setMic(!mic)} />
+            )}
           </DiplayFlexCon>
           <DiplayFlexCon>
             <CreateVideoIcon />
