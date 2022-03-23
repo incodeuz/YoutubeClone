@@ -8,6 +8,7 @@ const FootNavCon = styled.div`
   justify-content: center;
   height: 56px;
   position: fixed;
+  transition: all 0.3s;
   top: 56px;
   background: #212121;
   margin-left: ${({ logo }) => (logo ? "240px" : "0")};
@@ -18,7 +19,7 @@ const FootCard = styled.div`
   box-sizing: border-box;
   border-radius: 30px;
   color: white;
-  padding: 5px;
+  padding: 5px 10px;
   flex-wrap: wrap;
   margin: 0 5px;
   :hover {
