@@ -11,7 +11,12 @@ import { DisplayFlexColumn, DisplayFlexContent } from "./rootStyle";
 const Root = () => {
   const [logo] = useContext(ButtonContext);
   return (
-    <div>
+    <div
+      style={{
+        background: "#171717",
+        height: "100%",
+      }}
+    >
       <Navbar />
       <DisplayFlexContent>
         {logo && <Sidebar />}

@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
+import { BodySearchContext } from "../../context/searchBody";
 import { ButtonContext } from "../../context/sidebarContext";
+import { data } from "../../mock/mockApi";
 import {
   YoutubeLogo,
   SearchLogo,
@@ -18,7 +20,15 @@ import {
 
 const Navbar = () => {
   const [logo, setLogo, mic, setMic] = useContext(ButtonContext);
-  console.log(mic);
+  const [filter, setFilter] = useContext(BodySearchContext);
+
+  const navbarSearch = (e) => {
+    const newData = data.filter((value) =>
+      value.name.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+    setFilter(newData);
+  };
+
   return (
     <>
       <NavbarContainer>
@@ -35,7 +45,10 @@ const Navbar = () => {
           </DiplayFlexCon>
           <DiplayFlexCon>
             <form autoComplete="on">
-              <InputSearchBar placeholder="Enter a request" />
+              <InputSearchBar
+                placeholder="Enter a request"
+                onChange={(e) => navbarSearch(e)}
+              />
             </form>
             <SearchLogo />
             {mic ? (

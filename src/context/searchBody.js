@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import { data } from "../mock/mockApi";
 
-const BodySearchContext = createContext();
+export const BodySearchContext = createContext();
 const SearchContext = ({ children }) => {
   const [filter, setFilter] = useState(data);
   return (

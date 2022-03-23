@@ -18,14 +18,15 @@ const CardCon = styled.div`
 `;
 
 const CardImg = styled.img`
-  width: 340px;
-  height: 190px;
+  width: 290px;
+  height: 170px;
   margin-bottom: 12px;
 `;
 
 const CardTitle = styled.img`
   width: 36px;
   height: 36px;
+  margin-right: 12px;
   border-radius: 50%;
 `;
 
@@ -38,4 +39,21 @@ const CardName = styled.div`
   color: #ffffff;
 `;
 
-export { BodyCon, CardCon, CardImg, CardTitle,CardName };
+const DisplayFlex = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const DisplayFlexColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+export {
+  BodyCon,
+  DisplayFlex,
+  CardCon,
+  CardImg,
+  CardTitle,
+  CardName,
+  DisplayFlexColumn,
+};

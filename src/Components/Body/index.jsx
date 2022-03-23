@@ -1,19 +1,33 @@
 import React, { useContext } from "react";
+import { BodySearchContext } from "../../context/searchBody";
 import { ButtonContext } from "../../context/sidebarContext";
-import { data } from "../../mock/mockApi";
-import { BodyCon, CardCon, CardImg, CardTitle ,CardName} from "./style";
+import {
+  BodyCon,
+  CardCon,
+  CardImg,
+  CardTitle,
+  CardName,
+  DisplayFlex,
+  DisplayFlexColumn,
+} from "./style";
 
 const Body = () => {
   const [logo] = useContext(ButtonContext);
+  const [filter] = useContext(BodySearchContext);
+  console.log(filter);
 
   return (
     <BodyCon logo={logo}>
-      {data.map((value) => {
+      {filter.map((value) => {
         return (
           <CardCon>
             <CardImg src={value.url} />
-            <CardTitle src={value.avatar} />
-            <CardName>{value.name}</CardName>
+            <DisplayFlex>
+              <CardTitle src={value.avatar} />
+              <DisplayFlexColumn>
+                <CardName>{value.name}</CardName>
+              </DisplayFlexColumn>
+            </DisplayFlex>
           </CardCon>
         );
       })}

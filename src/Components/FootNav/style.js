@@ -11,6 +11,8 @@ const FootNavCon = styled.div`
   transition: all 0.3s;
   top: 56px;
   background: #212121;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
   margin-left: ${({ logo }) => (logo ? "240px" : "0")};
 `;
 const FootCard = styled.div`
