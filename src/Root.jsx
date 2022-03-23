@@ -9,12 +9,12 @@ import { ButtonContext } from "./context/sidebarContext";
 import { DisplayFlexColumn, DisplayFlexContent } from "./rootStyle";
 
 const Root = () => {
-  const [logo, setLogo] = useContext(ButtonContext);
+  const [logo] = useContext(ButtonContext);
   return (
     <div>
       <Navbar />
       <DisplayFlexContent>
-        {logo ? <Sidebar />:<h1>Dabba bolle</h1>}
+        {logo && <Sidebar />}
         <DisplayFlexColumn>
           <FootNav />
           <Body />
