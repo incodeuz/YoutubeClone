@@ -21,6 +21,9 @@ const FootCard = styled.div`
   padding: 5px;
   flex-wrap: wrap;
   margin: 0 5px;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export { FootNavCon, FootCard };
