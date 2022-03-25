@@ -28,3 +28,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #515151;
 }
+
+.active .bir{
+  background-color: #515151 !important;
+}
