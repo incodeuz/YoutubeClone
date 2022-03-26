@@ -10,6 +10,7 @@ import NotificaionLogo from "../../assets/Assets/header/headerMore/3.png";
 import UserIcon from "../../assets/imgs/ava4.png";
 import MicOn from "../../assets/forNavbar/micon.png";
 import MicOff from "../../assets/forNavbar/micoff.png";
+import MyLogo from "../../assets/forNavbar/myLogo.png";
 
 const NavbarContainer = styled.div`
   width: 100%;
@@ -75,16 +76,16 @@ const SearchLogo = styled.img.attrs({
   src: `${SearchIcon}`,
 })`
   width: 52px;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 const CreateVideoIcon = styled.img.attrs({
   src: `${CreateVideo}`,
 })`
   width: 30px;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 const MenuLogoIcon = styled.img.attrs({
@@ -92,8 +93,8 @@ const MenuLogoIcon = styled.img.attrs({
 })`
   width: 30px;
   margin-left: 30px;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 const NotificaionLogoIcon = styled.img.attrs({
@@ -101,18 +102,19 @@ const NotificaionLogoIcon = styled.img.attrs({
 })`
   width: 25px;
   margin-left: 30px;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 const UserAccaunt = styled.img.attrs({
-  src: `${UserIcon}`,
+  src: `${MyLogo}`,
 })`
   width: 35px;
+  height: 35px;
   margin-left: 30px;
   border-radius: 50%;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 
@@ -120,26 +122,26 @@ const Microphone = styled.img.attrs({
   src: `${MicOff}`,
 })`
   width: 33px;
-  margin-left:10px;
+  margin-left: 10px;
   border: 1px solid gray;
   background-color: #313131;
-  padding:5px;
+  padding: 5px;
   border-radius: 50%;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 const MicrophoneOn = styled.img.attrs({
   src: `${MicOn}`,
 })`
   width: 33px;
-  margin-left:10px;
+  margin-left: 10px;
   border: 1px solid gray;
   background-color: #313131;
-  padding:5px;
+  padding: 5px;
   border-radius: 50%;
-  :hover{
-    cursor:pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 
@@ -157,5 +159,4 @@ export {
   UserAccaunt,
   Microphone,
   MicrophoneOn,
-
 };
