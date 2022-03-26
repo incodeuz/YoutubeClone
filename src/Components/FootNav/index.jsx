@@ -7,8 +7,12 @@ import { FootNavCon, FootCard } from "./style";
 const FootNav = () => {
   const [click, setClick] = useContext(BodyContext);
   const [logo] = useContext(ButtonContext);
+  const getRefresh = () => {
+    window.location.reload(true);
+  };
   return (
     <FootNavCon logo={logo}>
+      <FootCard onClick={getRefresh}>All</FootCard>
       {result.map((value) => {
         return (
           <FootCard

@@ -19,7 +19,7 @@ export const elementData = [
   },
   {
     element: <Watch />,
-    path: "/watch_letter",
+    path: "/watchletter",
   },
   {
     element: <Subscr />,
@@ -35,7 +35,7 @@ export const elementData = [
   },
   {
     element: <YourVideos />,
-    path: "/your_videos",
+    path: "/yourvideos",
   },
   {
     element: <Shorts />,

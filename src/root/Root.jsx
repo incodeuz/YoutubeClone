@@ -18,15 +18,11 @@ const Root = () => {
     >
       <Navbar />
 
-         <Routes>
-           {
-             elementData.map(({element, path}) => {
-               return <Route  path={path} element={element} />
-             })
-           }
-         </Routes>
-
-
+      <Routes>
+        {elementData.map(({ element, path }) => {
+          return <Route path={path} element={element} />;
+        })}
+      </Routes>
 
       <DisplayFlexContent>
         {logo && <Sidebar />}
