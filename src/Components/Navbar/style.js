@@ -17,7 +17,7 @@ const NavbarContainer = styled.div`
   background: #212121;
   height: 56px;
   padding: 0 25px;
-  position: sticky;
+  position: fixed;
   top: 0;
 `;
 const NavWrapper = styled.div`

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const BodyCon = styled.div`
   margin-left: ${({ logo }) => (logo ? "240px" : "0")};
-  margin-top: 56px;
   display: flex;
   flex-wrap: wrap;
   transition: all 0.4s;
   background-color: #181818;
+  margin-top: 112px;
 `;
 
 const CardCon = styled.div`

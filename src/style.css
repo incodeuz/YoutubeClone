@@ -1,12 +1,16 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto&display=swap");
+@import "antd/dist/antd.css";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+body {
+  background-color: #181818;
+  color: white;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -19,9 +23,9 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: gray;
-	border-radius: 5px;
-	height: 10px;
+  background: gray;
+  border-radius: 5px;
+  height: 10px;
 }
 
 /* Handle on hover */
@@ -29,6 +33,20 @@
   background: #515151;
 }
 
-.active .bir{
+.active .bir {
   background-color: #515151 !important;
+}
+
+.ant-space-item {
+  padding: 0;
+}
+.ant-btn .ant-btn-default {
+  padding: 0;
+}
+
+.ant-btn {
+  padding: 0;
+}
+h4 {
+  margin: 0;
 }
