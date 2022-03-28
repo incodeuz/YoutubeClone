@@ -7,7 +7,6 @@ import SearchIcon from "../../assets/Assets/header/headerinput/1.png";
 import CreateVideo from "../../assets/Assets/header/headerMore/1.png";
 import MenuLogo from "../../assets/Assets/header/headerMore/2.png";
 import NotificaionLogo from "../../assets/Assets/header/headerMore/3.png";
-import UserIcon from "../../assets/imgs/ava4.png";
 import MicOn from "../../assets/forNavbar/micon.png";
 import MicOff from "../../assets/forNavbar/micoff.png";
 import MyLogo from "../../assets/forNavbar/myLogo.png";

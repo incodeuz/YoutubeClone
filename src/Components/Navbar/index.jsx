@@ -20,7 +20,7 @@ import {
 
 const Navbar = () => {
   const [logo, setLogo, mic, setMic] = useContext(ButtonContext);
-  const [filter, setFilter] = useContext(BodySearchContext);
+  const [setFilter] = useContext(BodySearchContext);
 
   const navbarSearch = (e) => {
     const newData = data.filter((value) =>

@@ -11,7 +11,7 @@ import {
   NavBodyPopularAvtor,
   NavBodyTitle,
   NavBodyCardImg,
-  NavBodyCarouselData,NavBodyCardTitle
+  NavBodyCarouselData,
 } from "./style";
 import { data } from "../../mock/mockApi";
 
@@ -49,10 +49,7 @@ const Navigator = () => {
         </NavDisplayFlex>
         <NavBodyCarouselData>
           {data.map((value) => {
-            return(
-               <NavBodyCardImg src={value.url} />
-      
-               )
+            return <NavBodyCardImg src={value.url} />;
           })}
         </NavBodyCarouselData>
       </NavBody>
